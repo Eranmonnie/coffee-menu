@@ -1,0 +1,175 @@
+*{
+
+    box-sizing: border-box;
+}
+body{
+
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+
+}
+
+.navbar{
+    grid-area: navbar;
+}
+.first-part{
+    grid-area: first-part;
+}
+.second-part{
+    grid-area: second-part;
+}
+.third-part{
+    grid-area: third-part;
+}
+.table-part{
+    grid-area: table-part;
+}
+
+
+.page{
+
+    display: grid;
+    row-gap: 30px;
+    column-gap: 30px;
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "first-part second-part"
+                         "first-part third-part"
+                         "table-part table-part" ;
+    
+}
+.navbar{
+    background-color: #43281c;
+    color: #fbf2c0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    
+}
+
+.nav-style{
+    text-align: center;
+}
+
+.first-part{
+    background-color: #eee1d5;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    border: 5px  ;
+    border-radius: 5px;
+    
+}
+.second-part{
+    background-color: #eee1d5;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: 0 1px 3px rgb(0 0 0 / 0.2);
+    border: 5px  ;
+    border-radius: 5px;
+   
+}
+.third-part{
+    background-color: #eee1d5;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: 0 1px 3px rgb(0 0 0 / 0.2);
+    border: 5px  ;
+    border-radius: 5px;
+    
+
+}
+.table-part{
+    align-items: center;
+}
+.item-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.multiple{
+    grid-area: multiple;
+}
+.order{
+    grid-area: order;
+}
+.price{
+    grid-area: price;
+}
+.type{
+    grid-area: type;
+}
+.type2{
+    grid-area: type2;
+}
+
+
+.item-list{
+    display: grid;
+    padding: 10px 0;
+    row-gap: 8px;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: "multiple order price"
+                         ". type ."
+                         ". type2 .";
+}
+.form-style{
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0 2px;
+}
+.label-style{
+    position: absolute;
+    left: 50px;
+    top:-7px;
+    padding:0 4px;
+    background-color: #eee1d5;
+}
+
+
+
+.input-style{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid;
+    padding: 8px;
+    border-radius: 100px;
+    width: 100%;
+    text-indent: 18px;
+    font-size: 18px;
+}
+.short{
+    max-width: 200px;
+}
+.name-style{
+    font-weight: normal;
+}
+
+.table-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-style{
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+.table-style td:last-child{
+    text-align: right;
+}
+.checkout{
+    background-color: #deb993;
+    border: none;
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 100px;
+    font-size: 16px;
+}
